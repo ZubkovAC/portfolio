@@ -10,9 +10,9 @@ import pngegg from './../img/pngegg.png'
 
 const FooterSite = [
     {id:1,title:'vk',href:"https://vk.com/id18217504",img:vk},
-    {id:1,title:'github',href:"https://vk.com/id18217504",img:github},
-    {id:1,title:'google',href:"https://vk.com/id18217504",img:google},
-    {id:1,title:'youtube',href:"https://vk.com/id18217504",img:youtube},
+    {id:1,title:'github',href:"https://github.com/ZubkovAC",img:github},
+    {id:1,title:'google',href:"https://www.google.ru/",img:google},
+    {id:1,title:'youtube',href:"https://www.youtube.com/channel/UC9DJ3Zqld-nqcdy_ozJp1QQ/about",img:youtube},
 ]
 
 export const Footer = () => {
