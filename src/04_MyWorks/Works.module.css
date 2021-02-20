@@ -1,0 +1,16 @@
+.works{
+    background-color: mediumaquamarine;
+}
+.box_works{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid;
+    flex-wrap: wrap;
+}
+.work{
+    border: 1px solid aquamarine;
+    color: yellow;
+    padding: 10px;
+}

@@ -1,0 +1,40 @@
+.contact{
+    background-color: lightslategray;
+
+
+}
+.contact_container{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.communication{
+    color: darkred;
+    border: 1px solid;
+}
+
+.communication_table{
+    padding: 5px;
+    margin:  0 auto;
+    width: 270px;
+}
+
+.thoughts{
+    max-width: 800px;
+    font-style: italic;
+    border: 1px solid dodgerblue;
+    padding: 5px;
+}
+form{
+    margin:  0 auto;
+}
+input{
+    width: 260px;
+}
+textarea{
+    width: 260px;
+}

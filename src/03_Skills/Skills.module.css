@@ -1,0 +1,30 @@
+.box_skills{
+    background-color: wheat;
+
+
+}
+.box_skills_container{
+    border: 2px solid olive;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+.box_skills_table{
+    display: flex;
+    border: 1px solid;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+.table_table{
+    width: 400px;
+    border: 2px solid white;
+    margin: 0 auto;
+    padding: 5px;
+}
+img{
+    padding-top: 20px;
+}
