@@ -10,6 +10,7 @@ export const Communication = () => {
                     <input type="text"/>
                     <input type="text"/>
                     <textarea name="text" id=""></textarea>
+                    <button type='submit'>submit</button>
 
                 </div>
             </form>

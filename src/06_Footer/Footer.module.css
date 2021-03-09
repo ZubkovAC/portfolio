@@ -1,10 +1,15 @@
+@font-face {
+    font-family: VerminVibes2soft;
+    src: url("../Fonts/VerminVibes2soft.otf") format("truetype");
+}
 .footer{
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: #000000;
+    box-shadow: inset 0px -20px 20px  10px rgb(15,30,41);
 
 }
 .footer_container{
-
+    padding: 40px;
 }
 .footer_container img{
     padding: 10px;
@@ -15,4 +20,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer_copy{
+    color:#7ca5b1;
+    padding-left: 30px;
+    font-family: VerminVibes2soft;
 }

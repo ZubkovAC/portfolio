@@ -1,15 +1,116 @@
+@font-face {
+    font-family: Test;
+    src: url("../Fonts/Tr2n.ttf") format("truetype");
+}
+@font-face {
+    font-family: Coalition;
+    src: url("../Fonts/Coalition.ttf") format("truetype");
+}
+@font-face {
+    font-family: VerminVibes2soft;
+    src: url("../Fonts/VerminVibes2soft.otf") format("truetype");
+}
+
 .works{
-    background-color: mediumaquamarine;
+    background-image: url("../Fonts/tron-face.jpg");
+    background-size:cover;
+    box-shadow: 0 0 10px 15px #386a82;
+    }
+.Test{
+    font-family:Test ;
+    color: #78ffff;
+}
+.Test1{
+    font-size: 75px
+}
+.Test2{
+    font-size: 55px
+}
+.Test3{
+    font-size: 75px;
+}
+.h3_text {
+    font-family:Coalition;
+    letter-spacing:2px;
+    color: #386a82;
+}
+
+.h4_text {
+    font-family: Teko,Arial,Helvetica,sans-serif;
+    letter-spacing:2px;
+    color:#386a82;
 }
 .box_works{
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
     width: 80%;
-    border: 1px solid;
+    /*border: 1px solid white;*/
     flex-wrap: wrap;
-
+    height: 100vh;
 }
 .face_title{
+    display: flex;
+    flex-direction: column;
     width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.box_works img{
+    margin: auto;
+}
+
+
+@media screen and (min-width: 720px){
+
+    .face_title{
+        width: 350px;
+    }
+    .face_title h4{
+        font-size: 25px;
+    }
+    .face_title h3{
+        font-size: 35px;
+        width: 350px ;
+    }
+}
+@media screen and (min-width: 1020px){
+
+    .face_title{
+        width: 350px;
+    }
+    .face_title h4{
+     font-size: 25px;
+    }
+    .face_title h3{
+        font-size: 35px;
+        width: 350px ;
+    }
+}
+@media screen and (min-width: 1440px){
+
+    .face_title{
+        width: 450px;
+    }
+    .face_title h4{
+        font-size: 30px;
+    }
+    .face_title h3{
+        font-size: 45px;
+        width: 450px ;
+    }
+}
+@media screen and (min-width: 1900px){
+
+    .face_title{
+        width: 550px;
+    }
+    .face_title h4{
+        font-size: 35px;
+    }
+    .face_title h3{
+        font-size: 55px;
+        width: 550px ;
+    }
 }

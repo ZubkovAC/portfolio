@@ -18,6 +18,7 @@ function App() {
                 <Contact/>
                 <Footer/>
 
+
                 {/*<Header2/>*/}
             </div>
 

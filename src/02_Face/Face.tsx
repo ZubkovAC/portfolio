@@ -1,24 +1,27 @@
 import React from "react";
 import css from './Face.module.css'
-import img  from './../img/samurai.jpg'
+
 
 export const Face=()=>{
     return(
         <div className={css.works}>
             <div className={css.box_works}>
-                    <img src={img} width='280px'alt="samurai"/>
-
                 <div className={css.face_title}>
-                    <h3 style={{margin:'0px',padding:'10px',backgroundColor:'white'}}>
-                        My Works
+                    <h3 className={css.h3_text} style={{margin:'0px',padding:'10px'}}>
+                       Portfolio  <span className={css.Test}>
+                       <span className={css.Test1}>Z</span>
+                       <span className={css.Test2}>ybkov </span>
+                       <span className={css.Test3}> A.C.</span>
+                    </span>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus optio quaerat similique. Ab assumenda autem consequuntur debitis doloribus eius impedit laudantium magni modi nesciunt nihil nobis odio perferendis quaerat, sed.</p>
-                </div>
+                    <h4 className={css.h4_text} style={{margin:'0px'}}>(Upgrade in progress.)</h4>
+                    <h4 className={css.h4_text}> Welcome to site Zybkov A.C. site upgrade to
+                        05.04.2021 .
 
+                    </h4>
+                </div >
 
             </div>
-
-
         </div>
     )
 }
