@@ -1,0 +1,23 @@
+.header {
+    background-color: grey;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    position: absolute;
+    .header_box{
+        display: flex;
+        margin: 10px;
+        border: 1px solid white;
+        .menu{
+            padding: 10px;
+        }
+    }
+    .header_box a{
+        color:white;
+        font-weight: 600;
+    }
+}
+
+
+

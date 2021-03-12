@@ -1,5 +1,5 @@
 import React from "react";
-import css from './Footer.module.css'
+import css from './Footer.module.scss'
 import vk from './../img/vk7.png'
 import github from './../img/github.png'
 import google from './../img/google.png'

@@ -1,5 +1,5 @@
 import React from "react";
-import css from './Face.module.css'
+import css from './Face.module.scss'
 
 
 export const Face=()=>{
@@ -15,9 +15,12 @@ export const Face=()=>{
                     </span>
                     </h3>
                     <h4 className={css.h4_text} style={{margin:'0px'}}>(Upgrade in progress.)</h4>
-                    <h4 className={css.h4_text}> Welcome to site Zybkov A.C. site upgrade to
-                        05.04.2021 .
-
+                    <h4 className={css.h4_text}>
+                        Welcome to Portfolio Zybkov A.C.
+                        <br/>
+                        next Upgrade to 5.05.21
+                        <br/>
+                        site v.2 site is not optimized for 4k+
                     </h4>
                 </div >
 

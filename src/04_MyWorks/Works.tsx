@@ -1,7 +1,7 @@
 import React from "react";
-import {Work} from "./Work";
-import css from './Works.module.css'
+import css from './Works.module.scss'
 import {Title} from "../components/title/Title";
+import {WorkTable} from "../components/Table/WorkTable";
 
 const MyWorks = [
     {id:1,title:'Todolists',message:'A Todolist is a simple to-do list or task list. Write down all your important things in it, so as not to forget. "To-do list" will allow you to organize your working time effectively.'},
@@ -19,7 +19,7 @@ export const Works=()=>{
 
             <div className={css.box_works}>
                 {
-                    MyWorks.map( m=> <Work key={m.id} title={m.title} message={m.message}/>)
+                    MyWorks.map( m=> <WorkTable key={m.id} title={m.title} message={m.message}/>)
                 }
 
             </div>

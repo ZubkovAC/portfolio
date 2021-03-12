@@ -1,7 +1,7 @@
-import css from "./Skills.module.css";
 import React from "react";
-import img from "./../img/js.jpg"
-import {Title} from "../components/title/Title";
+import {TitleTable} from "../title/TitleTable";
+import css from './Table.module.scss'
+import img from "../../img/js.jpg";
 
 export type TablePropsType={
     title:string
@@ -12,10 +12,7 @@ export const Table = (props:TablePropsType) => {
     return(
         <div className={css.table_table}>
             <img src={img} width='150px' alt="icon"/>
-            <div className={css.table_table_Title}>
-                <Title title={props.title} />
-            </div>
-
+            <TitleTable title={props.title}/>
             <div className={css.table_table_message} >
                 {props.message}
             </div>

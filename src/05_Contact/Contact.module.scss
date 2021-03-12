@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Test;
+    src: url("../Fonts/Tr2n.ttf") format("truetype");
+}
+@font-face {
+    font-family: Coalition;
+    src: url("../Fonts/Coalition.ttf") format("truetype");
+}
+@font-face {
+    font-family: VerminVibes2soft;
+    src: url("../Fonts/VerminVibes2soft.otf") format("truetype");
+}
+
+.contact{
+    background-image: linear-gradient(to bottom, rgb(2, 3, 20), rgb(2, 3, 18), rgb(2, 2, 16), rgb(1, 2, 15), rgb(1, 2, 13), rgb(1, 2, 11), rgb(1, 1, 9), rgb(1, 1, 7), rgb(1, 1, 5), rgb(0, 1, 4), rgb(0, 0, 2), rgb(0, 0, 0));
+    padding: 40px;
+    box-shadow: inset 0px 20px  20px 10px rgb(15,30,41);
+    font-size: 35px;
+    justify-content: center;
+    @media screen and (min-width: 350px){
+        padding: 0px;
+    }
+
+    .contact_container{
+        font-size: 25px;
+        display: flex;
+        margin: 0 auto;
+        padding: 40px;
+        width: 80%;
+        /*border: 1px solid white;*/
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color:white;
+        @media screen and (min-width: 350px){
+            padding: 20px;
+        }
+        @media screen and (min-width: 1000px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin:  0px auto;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .thoughts{
+            max-width: 800px;
+           /* border: 1px solid dodgerblue;*/
+            padding: 5px;
+
+            @media screen and (min-width: 350px){
+                display: none;
+            }
+            @media screen and (min-width: 1000px){
+                display: inline;
+                width-min: 450px;
+                padding: 20px;
+
+            }
+            @media screen and (min-width: 1350px){
+                display: inline;
+                width-min: 650px;
+
+            }
+            .h3_title{
+                color:red;
+                font-family:Coalition;
+                letter-spacing: 2px;
+                padding: 40px;
+            }
+            .great_sayings{
+                padding: 20px;
+                font-family:Teko,Arial,Helvetica,sans-serif;
+            }
+        }
+
+    }
+}
+
+
+form{
+    margin:  0 auto;
+}
+input{
+    padding: 10px;
+    margin: 5px;
+    width: 240px;
+}
+textarea{
+    padding: 10px;
+    margin: 5px;
+    width: 240px;
+    height: 50px;
+    font-size: 18px;
+}
+
+@media screen and (min-width:767px ){
+    .communication_table{
+        padding: 25px;
+        margin:  0 auto;
+    }
+    form{
+        margin:  0 auto;
+    }
+    input{
+        padding: 10px;
+        margin: 5px;
+        width: 340px;
+    }
+    textarea{
+        padding: 10px;
+        margin: 5px;
+        width: 340px;
+        height: 50px;
+        font-size: 18px;
+    }
+}

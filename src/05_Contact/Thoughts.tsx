@@ -1,19 +1,24 @@
 import React from "react";
-import css from './Contact.module.css'
+import css from './Contact.module.scss'
 
-export const Thoughts=()=>{
-    return(
-        <div className={css.thoughts} >
-                <div>
-                    <h3 style={{backgroundColor:'grey'}}>Great sayings </h3>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque blanditiis, consequuntur corporis eveniet magni odio optio reprehenderit tenetur vel. Aut dolor esse fuga hic quas, sequi similique unde veritatis.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consequatur cum eius eligendi hic illo libero magni maiores provident, quas quo, reprehenderit suscipit tempora. Atque culpa earum numquam odio voluptas?</p>
-                </div>
+export const Thoughts = () => {
+    return (
+        <div className={css.thoughts}>
+            <div className={css.h3_title}>
+                <h3>Great sayings </h3>
+            </div>
 
+            <div className={css.great_sayings}>
+                you can't easily pull a fish out of a pond
+
+            </div>
+
+            <div className={css.great_sayings}>
+                water sharpens the stone
+            </div>
+            <div className={css.great_sayings}>
+                patience and hard work will wear everything out
+            </div>
 
         </div>
     )

@@ -1,19 +1,20 @@
 import React from "react";
-import img from "./../img/js.jpg"
-import css from './Works.module.css'
-import {Title} from "../components/title/Title";
+import img from '../../img/js.jpg'
+import css from './WorkTable.module.scss'
+import {TitleTable} from "../title/TitleTable";
+
 
 export type WorkPropsType={
     title:string
     message:string
 }
 
-export const Work=(props:WorkPropsType)=>{
+export const WorkTable=(props:WorkPropsType)=>{
     return(
-        <div >
+        <div className={css.work_container} >
             <a href='https://res.cloudinary.com/time2hack/image/upload/q_auto:good/5-best-javascript-editors-social-md.jpg'>
                 <img src={img} alt="photo+work"/></a>
-            <Title title={props.title}/>
+            <TitleTable title={props.title}/>
             <div className={css.work}>
 
                 <p>{props.message}</p>

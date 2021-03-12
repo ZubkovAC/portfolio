@@ -1,15 +1,16 @@
-import css from './Contact.module.css'
+import css from './Contact.module.scss'
+import {Input} from "../components/Input/Input";
 
 export const Communication = () => {
     return (
         <div className={css.communication}>
 
             <form action="">
-                <h3>Contact</h3>
                 <div className={css.communication_table}>
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea name="text" id=""></textarea>
+                    <Input title={'Name'}/>
+                    <Input title={'Address'}/>
+                    <Input title={'Phone'}/>
+                    <Input title={'Message'}/>
                     <button type='submit'>submit</button>
 
                 </div>

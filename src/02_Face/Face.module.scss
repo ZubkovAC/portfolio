@@ -15,6 +15,12 @@
     background-image: url("../Fonts/tron-face.jpg");
     background-size:cover;
     box-shadow: 0 0 10px 15px #386a82;
+    @media screen and (min-width: 350px){
+        background-size:auto;
+    }
+    @media screen and (min-width: 750px){
+        background-size:cover;
+    }
     }
 .Test{
     font-family:Test ;
@@ -33,12 +39,21 @@
     font-family:Coalition;
     letter-spacing:2px;
     color: #386a82;
+    @media screen and (min-width: 350px){
+        font-size: 25px;
+
+    }
+
 }
 
 .h4_text {
     font-family: Teko,Arial,Helvetica,sans-serif;
     letter-spacing:2px;
     color:#386a82;
+    @media screen and (min-width: 350px){
+        font-size: 20px;
+
+    }
 }
 .box_works{
     display: flex;

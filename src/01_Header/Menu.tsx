@@ -1,4 +1,4 @@
-import css from "./Header.module.css";
+import css from "./Header.module.scss";
 import React from "react";
 
 export type MenuPropsType ={

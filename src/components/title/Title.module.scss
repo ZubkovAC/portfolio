@@ -1,0 +1,41 @@
+@font-face {
+    font-family: VerminVibes2soft;
+    src: url("../../Fonts/VerminVibes2soft.otf") format("truetype");
+}
+.title_container{
+    display: flex;
+    justify-content: center;
+
+    .title {
+        font-family: VerminVibes2soft;
+        letter-spacing: 2px;
+        padding:20px;
+        color:#386a82;
+        justify-content: center;
+        @media screen and(min-width: 350px){
+            font-size: 24px;
+        }
+        @media screen and(min-width: 700px){
+            font-size: 35px;
+        }
+
+        }
+    }
+    .title::before {
+        content:'';
+        position: absolute;
+        margin: 0 0 30px;
+        width: 80px;
+        height:4px;
+        bottom:-140px;
+        border-radius: 2px;
+        background-color: #79fefd;
+        left:50%;
+        transform: translate(-50%,50%);
+        @media screen and(min-width: 350px){
+            bottom:-110px;
+    }
+}
+
+
+
