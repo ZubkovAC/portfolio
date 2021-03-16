@@ -1,5 +1,6 @@
+@import "./../components/AllColor/AllColor";
 .box_skills{
-    background-color: #05080d;
+    background-color:$BgFirstColor;
     flex-wrap: wrap;
     min-height: 80vh;
     box-shadow: inset 0px 20px 20px rgb(15,30,41);

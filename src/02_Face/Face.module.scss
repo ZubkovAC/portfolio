@@ -1,3 +1,4 @@
+@import "./../components/AllColor/AllColor";
 @font-face {
     font-family: Test;
     src: url("../Fonts/Tr2n.ttf") format("truetype");
@@ -24,7 +25,7 @@
     }
 .Test{
     font-family:Test ;
-    color: #78ffff;
+    color: $ColorFaceName;
 }
 .Test1{
     font-size: 75px
@@ -38,7 +39,7 @@
 .h3_text {
     font-family:Coalition;
     letter-spacing:2px;
-    color: #386a82;
+    color: $ColorTitle;
     @media screen and (min-width: 350px){
         font-size: 25px;
 
@@ -49,7 +50,7 @@
 .h4_text {
     font-family: Teko,Arial,Helvetica,sans-serif;
     letter-spacing:2px;
-    color:#386a82;
+    color:$ColorText;
     @media screen and (min-width: 350px){
         font-size: 20px;
 

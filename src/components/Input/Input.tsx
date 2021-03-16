@@ -2,6 +2,7 @@ import React from "react";
 import  './Input.module.scss'
 type InputPropsType ={
     title:string
+    type:'text' | 'number'
 }
 
 export const Input = (props:InputPropsType) => {
@@ -14,7 +15,7 @@ export const Input = (props:InputPropsType) => {
     });
     return (
         <div className='input_wrapper' data-text="asdfas">
-            <input type="text" placeholder={props.title}/>
+            <input type={props.type} placeholder={props.title}/>
 
         </div>
     )

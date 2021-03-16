@@ -1,3 +1,4 @@
+@import "./../components/AllColor/AllColor";
 @font-face {
     font-family: Test;
     src: url("../Fonts/Tr2n.ttf") format("truetype");
@@ -12,7 +13,7 @@
 }
 
 .contact{
-    background-image: linear-gradient(to bottom, rgb(2, 3, 20), rgb(2, 3, 18), rgb(2, 2, 16), rgb(1, 2, 15), rgb(1, 2, 13), rgb(1, 2, 11), rgb(1, 1, 9), rgb(1, 1, 7), rgb(1, 1, 5), rgb(0, 1, 4), rgb(0, 0, 2), rgb(0, 0, 0));
+    background-image: $BgImageContact;
     padding: 40px;
     box-shadow: inset 0px 20px  20px 10px rgb(15,30,41);
     font-size: 35px;
@@ -30,14 +31,14 @@
         /*border: 1px solid white;*/
         justify-content: space-around;
         flex-wrap: wrap;
-        color:white;
+        color:$ColorGreatSayingsMessage;
         @media screen and (min-width: 350px){
             padding: 20px;
         }
         @media screen and (min-width: 1000px){
             display: grid;
             grid-template-columns: 1fr 1fr;
-            margin:  0px auto;
+            margin:  0 auto;
             padding: 20px;
             justify-content: space-between;
         }
@@ -62,7 +63,7 @@
 
             }
             .h3_title{
-                color:red;
+                color:$ColorGreatSayings;
                 font-family:Coalition;
                 letter-spacing: 2px;
                 padding: 40px;

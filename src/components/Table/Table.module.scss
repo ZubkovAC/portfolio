@@ -1,11 +1,12 @@
+@import '../AllColor/AllColor';
 .table_table{
-  background-color:#06090f;
+  background-color:$BgTableColor;
   width: 400px;
   /*border: 2px solid #060a15;*/
   border-radius: 10px;
   padding: 5px;
   margin: 10px;
-  box-shadow: 0 0 20px 0px #386a82;
+  box-shadow: 0 0 20px 0px $ColorShadow;
   margin-top: 40px;
   margin-bottom: 40px;
   @media screen and (min-width: 350px){
@@ -40,10 +41,10 @@
 
   .table_table_message{
     font-size: 20px;
+    font-weight: 600;
     font-family: Teko,Arial,Helvetica,sans-serif;
     letter-spacing:1px;
-    color: #386a82;
-    font-weight: 600;
+    color: $ColorText;
     @media screen and (min-width: 700px){
       font-size: 25px;
     }

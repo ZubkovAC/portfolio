@@ -1,10 +1,11 @@
+@import "./../components/AllColor/AllColor";
 @font-face {
     font-family: VerminVibes2soft;
     src: url("../Fonts/VerminVibes2soft.otf") format("truetype");
 }
 .footer{
     flex-wrap: wrap;
-    background-color: #000000;
+    background-color: $BgFooterColor;
     box-shadow: inset 0px -20px 20px  10px rgb(15,30,41);
 
     .footer_container{
@@ -21,7 +22,7 @@
                 margin-bottom: -20px;
             }
             .footer_copy{
-                color:#7ca5b1;
+                color:$ColorAutograph;
                 padding-left: 30px;
                 font-family: VerminVibes2soft;
             }

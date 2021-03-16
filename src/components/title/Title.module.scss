@@ -1,3 +1,4 @@
+@import '../AllColor/AllColor';
 @font-face {
     font-family: VerminVibes2soft;
     src: url("../../Fonts/VerminVibes2soft.otf") format("truetype");
@@ -10,10 +11,10 @@
         font-family: VerminVibes2soft;
         letter-spacing: 2px;
         padding:20px;
-        color:#386a82;
+        color:$ColorTitle;
         justify-content: center;
         @media screen and(min-width: 350px){
-            font-size: 24px;
+            font-size: 26px;
         }
         @media screen and(min-width: 700px){
             font-size: 35px;
@@ -29,7 +30,7 @@
         height:4px;
         bottom:-140px;
         border-radius: 2px;
-        background-color: #79fefd;
+        background-color: $ColorTitleBefore;
         left:50%;
         transform: translate(-50%,50%);
         @media screen and(min-width: 350px){

@@ -1,8 +1,10 @@
+@import "./../components/AllColor/AllColor";
 .works{
-    background-color: #060f18;
-    font-size: 30px;
-    margin:0px;
-    box-shadow: 0 0 20px 0px #386a82;
+    background-color: $BgLastColor;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin:0;
+    box-shadow: 0 0 20px 0px $ColorTitle;
     @media screen and (min-width: 700px){
         font-size: 30px;
 
@@ -20,7 +22,7 @@
         flex-wrap: wrap;
         text-align: center;
         padding: 40px;
-        padding-top: 0px;
+        padding-top: 0;
         @media screen and (min-width: 350px){
             padding-bottom: 40px;
 
@@ -32,7 +34,7 @@
         @media screen and (min-width: 1000px){
             display: grid;
             grid-template-columns: 1fr 1fr;
-            margin: 0px auto;
+            margin: 0 auto;
 
         }
 

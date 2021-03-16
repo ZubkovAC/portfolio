@@ -15,7 +15,7 @@ export const WorkTable=(props:WorkPropsType)=>{
             <a href='https://res.cloudinary.com/time2hack/image/upload/q_auto:good/5-best-javascript-editors-social-md.jpg'>
                 <img src={img} alt="photo+work"/></a>
             <TitleTable title={props.title}/>
-            <div className={css.work}>
+            <div className={css.work_message}>
 
                 <p>{props.message}</p>
             </div>
