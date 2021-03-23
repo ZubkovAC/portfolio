@@ -2,7 +2,9 @@ import React from "react";
 import  './Input.module.scss'
 type InputPropsType ={
     title:string
-    type:'text' | 'number'
+    type: 'text' | 'number' | "email" | "submit"
+    name: "phone" | "name" | "email" | 'pass' | 'message'
+    value?:'Send'
 }
 
 export const Input = (props:InputPropsType) => {
@@ -15,7 +17,12 @@ export const Input = (props:InputPropsType) => {
     });
     return (
         <div className='input_wrapper' data-text="asdfas">
-            <input type={props.type} placeholder={props.title}/>
+            {props.value
+                ?
+                <input type={props.type} title={props.title} name={props.name} value={props.value}/>
+                :
+                <input type={props.type} placeholder={props.title} name={props.name}/>
+            }
 
         </div>
     )
