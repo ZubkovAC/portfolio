@@ -11,7 +11,7 @@ type ContactInputType = {
 }
 
 const ContactInput: ContactInputType[] = [
-    {id: 100, title: 'Name', type: "text", name: "name"},
+    {id: 100, title: 'Name', type: 'text', name: "name"},
     {id: 101, title: 'Email', type: 'email', name: "email"},
     {id: 102, title: 'Phone', type: 'number', name: "phone"},
     {id: 103, title: 'Message', type: 'text', name: "message"},
@@ -21,17 +21,17 @@ const ContactInput: ContactInputType[] = [
 export const Communication = () => {
 
     const sendEmail = (e: any) => {
-        e.preventDefault();
+            e.preventDefault();
 
-        emailjs.sendForm('service_mtj7tps', 'template_zl9m2rl', e.target,
-            'user_MBKEz0Lx85KlXMgE8JZop')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset()
-    }
+            emailjs.sendForm('service_mtj7tps', 'template_zl9m2rl', e.target,
+                'user_MBKEz0Lx85KlXMgE8JZop')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+            e.target.reset()
+        }
 
     return (
         <div className={css.communication}>

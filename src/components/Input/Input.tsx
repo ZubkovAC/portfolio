@@ -8,15 +8,15 @@ type InputPropsType ={
 }
 
 export const Input = (props:InputPropsType) => {
-    const wrapper = document.querySelector(".input_wrapper"),
-        textInput = document.querySelector("input[type='text']");
 
-    textInput && textInput.addEventListener("keyup", event => {
+
+        const wrapper = document.querySelector(".input_wrapper"), textInput = document.querySelector("input[type='text']");
+
         // @ts-ignore
-        wrapper && wrapper.setAttribute("data_text",  event.target.value);
-    });
+    textInput &&  textInput.addEventListener("keyup", event => {wrapper && wrapper.setAttribute("data_text",  event.target.value)});
+
     return (
-        <div className='input_wrapper' data-text="asdfas">
+        <div className='input_wrapper' data-text="">
             {props.value
                 ?
                 <input type={props.type} title={props.title} name={props.name} value={props.value}/>

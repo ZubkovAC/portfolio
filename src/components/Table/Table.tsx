@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useLayoutEffect} from "react";
 import {TitleTable} from "../title/TitleTable";
 import css from './Table.module.scss'
 import img from "../../img/js.jpg";
 
 export type TablePropsType={
     title:string
-    message:string
+    message:Array<string>
 }
 
 export const Table = (props:TablePropsType) => {
@@ -14,7 +14,9 @@ export const Table = (props:TablePropsType) => {
             <img src={img} width='150px' alt="icon"/>
             <TitleTable title={props.title}/>
             <div className={css.table_table_message} >
-                {props.message}
+                <ul>
+                {props.message.map(mes=><div> {mes}</div>)}
+                </ul>
             </div>
         </div>
 
