@@ -6,6 +6,7 @@ import {Works} from "./04_MyWorks/Works";
 import {Contact} from "./05_Contact/Contact";
 import {Footer} from "./06_Footer/Footer";
 import {Face} from "./02_Face/Face";
+import {TestComponent} from "./components/TestComponent";
 
 function App() {
     return (

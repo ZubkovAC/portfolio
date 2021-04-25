@@ -1,38 +1,49 @@
 @import '../AllColor/AllColor';
-@font-face {
-    font-family: VerminVibes2soft;
-    src: url("../../Fonts/VerminVibes2soft.otf") format("truetype");
-}
-.title_container_table{
-    display: flex;
-    justify-content: center;
-    @media screen and(min-width: 350px){
-        font-size: 20px;
-    }
-    @media screen and(min-width: 450px){
-        font-size: 30px;
-    }
-    @media screen and(min-width: 750px){
-        font-size: 170px;
-    }
-    .title_table {
-        font-family: VerminVibes2soft;
-        letter-spacing: 2px;
-        padding:20px;
-        color:$ColorTitleTable;
-        justify-content: center;
-        @media screen and(min-width: 350px){
-            font-size: 23px;
-        }
-        @media screen and(min-width: 400px){
-            font-size: 26px;
-        }
-        @media screen and(min-width: 750px){
-            font-size: 30px;
-        }
 
-        }
+@font-face {
+  font-family: VerminVibes2soft;
+  src: url("../../Fonts/VerminVibes2soft.otf") format("truetype");
+}
+
+.title_container_table {
+  display: flex;
+  justify-content: center;
+  @media screen and(min-width: 350px) {
+    font-size: 20px;
+  }
+  @media screen and(min-width: 450px) {
+    font-size: 30px;
+  }
+  @media screen and(min-width: 750px) {
+    font-size: 170px;
+  }
+
+  .title_table {
+    font-family: VerminVibes2soft;
+    letter-spacing: 2px;
+    padding: 20px;
+    color: $ColorTitleTable;
+    justify-content: center;
+    text-shadow: 0 0 25px #03e9f4;
+    transition:1.5s;
+    &:hover{
+        text-shadow: 0 0 25px #03e9f4, 0 0 25px #03e9f4, 0 0 25px #03e9f4, 0 0 5px #03e9f4, 0 0 25px #03e9f4;
+
     }
+
+
+    @media screen and(min-width: 350px) {
+      font-size: 23px;
+    }
+    @media screen and(min-width: 400px) {
+      font-size: 26px;
+    }
+    @media screen and(min-width: 750px) {
+      font-size: 30px;
+    }
+
+  }
+}
 
 
 

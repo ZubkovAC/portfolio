@@ -1,0 +1,32 @@
+.container {
+    background-color: black;
+    position:absolute;
+    top:150%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /*color:white;*/
+}
+.btn{
+    position:relative;
+    text-align: center;
+    width: 250px;
+    padding:40px;
+    font-size: 35px;
+    color:#03e9f4;
+    font-family: poppins;
+    font-weight: 400;
+    border: 5px solid #03e9f4;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    border-radius: 100px ;
+    cursor: pointer;
+    transition:1.5s;
+}
+.btn:hover{
+    /*box-shadow:*/
+    /*        !*0 5px 50px 0 #03e9f4 inset, 0 5px 50px 0 #03e9f4 inset,*!*/
+    /*        !*0 5px 50px 0 #03e9f4 inset,*!*/
+    /*        0 5px 50px 0 #03e9f4 inset ;*/
+    text-shadow:
+0 0 25px #03e9f4,0 0 25px #03e9f4,0 0 25px #03e9f4,0 0 5px #03e9f4,0 0 25px #03e9f4;
+}

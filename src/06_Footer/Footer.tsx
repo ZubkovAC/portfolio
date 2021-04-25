@@ -1,11 +1,11 @@
 import React from "react";
 import css from './Footer.module.scss'
-import vk from './../img/vk7.png'
-import github from './../img/github.png'
-import google from './../img/google.png'
-import youtube from './../img/youtube.png'
+import vk from '../img/label/vk7.png'
+import github from '../img/label/github.png'
+import google from '../img/label/google.png'
+import youtube from '../img/label/youtube.png'
 
-import pngegg from './../img/pngegg.png'
+import pngegg from '../img/label/pngegg.png'
 
 const FooterSite = [
     {id:1,title:'vk',href:"https://vk.com/id18217504",img:vk},
