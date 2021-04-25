@@ -6,7 +6,7 @@ export type MenuPropsType ={
     menu:string
 }
 
-export const Menu=(props:MenuPropsType)=>{
+export const MenuOff=(props:MenuPropsType)=>{
     const [accordion, setAccordion] = useState(false)
     const menu = (e:any) => {
         setAccordion(!accordion)

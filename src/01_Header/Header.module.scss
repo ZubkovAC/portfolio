@@ -1,3 +1,4 @@
+@import "./../components/AllColor/AllColor";
 .header {
     height: 60px;
     display: flex;
@@ -15,23 +16,33 @@
         font-weight: 600;
     }
 }
-
+.stopProppagation{
+    height: 100vh;
+}
 .header{
     width: 150px;
     margin: 20px;
     font-size: 20px;
-    text-shadow: 0 0 5px maroon;
+    text-shadow: 0 0 35px black;
+    color: $ColorFaceName;
 }
 .active{
-    color:black;
+    color: #386a82;
     font-weight: 600;
     float:left;
+    transition: 1s;
+}
+.active:hover{
+    text-shadow:
+            0 0 15px $ColorFaceName,0 0 15px $ColorFaceName,
+            0 0 15px $ColorFaceName ,0 0 15px $ColorFaceName;
 }
 .menu_list{
     display: flex;
-    justify-content: space-around;
+    //justify-content: space-between;
+    margin-top:50px;
     align-items: center;
-    height: 50%;
+    height: 100%;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -53,7 +64,7 @@
     background-color: white;
     opacity: 1;
     transition: 0.5s;
-    transform: translateX(-102%);
+    transform: translateX(-104%);
     box-shadow:  0 0 10px maroon;
 }
 
@@ -67,32 +78,45 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-    opacity: 0.4;
+    opacity: 0.6;
     transition: 0.5s;
     transform:translateX(0%);
     box-shadow:  0 0 10px white;
 }
+
 .menu_btm{
     opacity: 0.6;
-    border: 1px solid burlywood;
+    border: 2px solid white;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: wheat;
+    width: 60px;
+    height: 60px;
+    background-color:rgba(0,0,0,0);
     position: absolute;
-    right: -73px;
+    right: -120px;
     top:10px;
     margin: 20px;
     box-shadow:0 0 10px white;
+    transition: 0.5s;
 }
 .menu_btm:hover{
-    background-color:maroon ;
+    background-color:rgba(0,0,0,0) ;
+    box-shadow:
+            0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
+        inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName;
+
+
+
 }
 .menu_btm:active{
-    background-color:red ;
+    border: 2px solid $ColorFaceName;
+    box-shadow:
+            0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
+            inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName,
+            0 0 15px white,0 0 15px white,
+            inset 0 0 15px white, inset 0 0 15px white;
 }
 
-
+//#386a82
 
 .wrapper{
     position: relative;

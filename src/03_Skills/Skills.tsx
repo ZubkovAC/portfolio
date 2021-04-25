@@ -15,7 +15,6 @@ const MySkills = [
 ]
 
 
-
 export const Skills=()=>{
     return(
         <div className={css.box_skills}>
