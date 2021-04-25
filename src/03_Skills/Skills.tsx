@@ -8,9 +8,9 @@ import img from "../img/js.jpg";
 const MySkills = [
     {id:12,title:'React',message:['Hooks','Redux','React-Redux','UniTest','HOC','storyBook(low)']},
     {id:22,title:'TypeScript',message:['type of data','callback','type function','type AXIOS','type of generic (low)']},
-    {id:32,title:'server requests ',message:['axios']},
+    {id:32,title:'server requests ',message:['Promises','Thunk','axios']},
     {id:42,title:'Blind printing',message:['Blind typing is a type of typing on the keyboard. After learning this skill, typing speeds up by 2 -2.5 times , and the number of errors is reduced.']},
-    {id:52,title:'Css',message:['flex','grid(low)']},
+    {id:52,title:'Css',message:['flex','SASS','grid(low)']},
 ]
 
 

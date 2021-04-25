@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React from "react";
 import {TitleTable} from "../title/TitleTable";
 import css from './Table.module.scss'
 import img from "../../img/js.jpg";
@@ -19,6 +19,5 @@ export const Table = (props:TablePropsType) => {
                 </ul>
             </div>
         </div>
-
     )
 }
