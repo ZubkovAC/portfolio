@@ -1,11 +1,13 @@
 .App {
 
   text-align: center;
+  margin: 0 auto;
 }
 .container {
-  margin: 0 auto;
+
 
 }
 .bottom{
   height: 100vh;
 }
+
