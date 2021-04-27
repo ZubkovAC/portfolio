@@ -1,14 +1,19 @@
 import React from "react";
-import  './Input.module.scss'
+
 type InputPropsType ={
     title:string
     type: 'text' | 'number' | "email" | "submit"
     name: "phone" | "name" | "email" | 'pass' | 'message'
     value?:'Send'
+    onText?:(e:any)=>void
 }
 
 export const Input = (props:InputPropsType) => {
 
+
+    const onChange = (e:any) =>{
+        props.onText && props.onText(e.currentTarget.value)
+    }
 
         const wrapper = document.querySelector(".input_wrapper"), textInput = document.querySelector("input[type='text']");
 
@@ -19,11 +24,16 @@ export const Input = (props:InputPropsType) => {
         <div className='input_wrapper' data-text="">
             {props.value
                 ?
-                <input type={props.type} title={props.title} name={props.name} value={props.value}/>
+                <input type={props.type} title={props.title} name={props.name} autoComplete="off" value={props.value}/>
                 :
-                <input type={props.type} placeholder={props.title} name={props.name}/>
+                <input
+                    type={props.type}
+                    placeholder={props.title}
+                    autoComplete="off"
+                    name={props.name}
+                    onChange={onChange}
+                />
             }
-
         </div>
     )
 }

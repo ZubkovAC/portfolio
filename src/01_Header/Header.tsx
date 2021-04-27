@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import css from './Header.module.scss'
 import {MenuOff} from "./MenuOff";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const UpMenu = [
     {id: 1, title: 'Main Page'},
@@ -30,16 +30,17 @@ export const Header = () => {
                     <NavLink to="#" className={css.menu_btm} onClick={menu}> </NavLink>
                         <nav className={css.menu_list} >
 
-                                <NavLink to="#" className={css.header} activeClassName={css.active}>
-                                    {UpMenu[0].title}</NavLink>
-                                <NavLink to="/" className={css.header} activeClassName={css.active}>
-                                    {UpMenu[1].title}</NavLink>
-                                <NavLink to="/" className={css.header} activeClassName={css.active}>
-                                    {UpMenu[2].title}</NavLink>
-                                <NavLink to="/" className={css.header} activeClassName={css.active}>
-                                    {UpMenu[3].title}</NavLink>
+                                <a href="#" className={css.header} >
+                                    {UpMenu[0].title}</a>
+                                <a href="#MySkiils" className={css.header} >
+                                    {UpMenu[1].title}</a>
+                                <a href="#MyWorks" className={css.header} >
+                                    {UpMenu[2].title}</a>
+                                <a href="#Contact"   className={css.header} >
+                                    {UpMenu[3].title}</a>
                                 <NavLink to="/" className={css.header} activeClassName={css.active}>
                                     {UpMenu[4].title}</NavLink>
+
 
                         </nav>
                     </div>

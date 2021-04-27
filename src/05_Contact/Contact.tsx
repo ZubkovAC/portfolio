@@ -4,10 +4,13 @@ import {Communication} from "./Сommunication";
 import {Thoughts} from "./Thoughts";
 import {Title} from "../components/title/Title";
 
+
+
 export const Contact = () => {
     return (
         <div >
-            <div className={css.contact} >
+            <div className={css.contact} id='Contact'>
+
                 <Title title={'quick contact'}/>
                 <div className={css.contact_container}>
 

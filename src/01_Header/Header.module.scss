@@ -24,15 +24,12 @@
     margin: 20px;
     font-size: 20px;
     text-shadow: 0 0 35px black;
-    color: $ColorFaceName;
-}
-.active{
     color: #386a82;
     font-weight: 600;
-    float:left;
     transition: 1s;
 }
-.active:hover{
+
+.header:hover{
     text-shadow:
             0 0 15px $ColorFaceName,0 0 15px $ColorFaceName,
             0 0 15px $ColorFaceName ,0 0 15px $ColorFaceName;

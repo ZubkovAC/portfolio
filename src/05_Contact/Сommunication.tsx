@@ -1,7 +1,8 @@
 import css from './Contact.module.scss'
 import {Input} from "../components/Input/Input";
 import emailjs from 'emailjs-com';
-
+import {useState} from "react";
+import  './../components/Input/Input.module.scss'
 type ContactInputType = {
     id: number
     title: string
@@ -19,6 +20,25 @@ const ContactInput: ContactInputType[] = [
 ]
 
 export const Communication = () => {
+
+    const [name,setName]=useState<string>('')
+    const [email,setEmail]=useState<string>('')
+    const [phone,setPhone]=useState<any>(null)
+    const [message,setMessage]=useState<string>('')
+
+    const testName =(value:string) => {
+        setName(value)
+    }
+    const testEmail =(value:string) => {
+        setEmail(value)
+    }
+    const testPhone =(value:number) => {
+        setPhone(value)
+    }
+    const testMessage =(value:string) => {
+        setMessage(value)
+    }
+
 
     const sendEmail = (e: any) => {
             e.preventDefault();
@@ -38,12 +58,40 @@ export const Communication = () => {
 
             <form className="contact-form" onSubmit={sendEmail}>
                 <div className={css.communication_table}>
-                    {
-                        ContactInput.map(c => {
-                            return <Input key={c.id} value={c.value} title={c.title} name={c.name} type={c.type}/>
-                        })
-                    }
+                    <div className='input_wrapper'>
+                        <input key={ContactInput[0].id} value={name} placeholder={ContactInput[0].title}
+                               onChange={e=>testName(e.currentTarget.value)}
+                               name={ContactInput[0].name}
+                               type={ContactInput[0].type}/>
+                    </div>
+                   <div className='input_wrapper'>
+                       <input key={ContactInput[1].id} value={email} placeholder={ContactInput[1].title}
+                              onChange={e=>testEmail(e.currentTarget.value)}
+                              name={ContactInput[1].name}
+                              type={ContactInput[1].type}/>
+                   </div>
+
+                    <div className='input_wrapper'>
+                        <input key={ContactInput[2].id} value={phone} placeholder={ContactInput[2].title}
+                               onChange={e=>testPhone(+e.currentTarget.value)}
+                               name={ContactInput[2].name}
+                               type={ContactInput[2].type}/>
+                    </div>
+                    <div className='input_wrapper'>
+                        <input key={ContactInput[3].id} value={message} placeholder={ContactInput[3].title}
+                               onChange={e=>testMessage(e.currentTarget.value)}
+                               name={ContactInput[3].name}
+                               type={ContactInput[3].type}/>
+                    </div>
+
+                        <button>'Send'</button>
+                    {/*{*/}
+                    {/*    ContactInput.map(c => {*/}
+                    {/*        return <Input key={c.id} value={c.value} title={c.title}  onText={testLength} name={c.name} type={c.type}/>*/}
+                    {/*    })*/}
+                    {/*}*/}
                 </div>
+
             </form>
         </div>
     )

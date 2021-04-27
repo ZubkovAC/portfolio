@@ -17,7 +17,7 @@ const MySkills = [
 
 export const Skills=()=>{
     return(
-        <div className={css.box_skills}>
+        <div className={css.box_skills} id='MySkiils'>
             <div className={css.box_skills_container} >
                 <Title title={'My Skills'}/>
 

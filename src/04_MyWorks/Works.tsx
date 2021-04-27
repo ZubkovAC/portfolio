@@ -23,7 +23,7 @@ const MyWorks = [
 
 export const Works=()=>{
     return(
-        <div className={css.works}>
+        <div className={css.works} id='MyWorks'>
             <div className={css.works_Title}>
                 <Title title={'My Works'}/>
             </div>
