@@ -1,5 +1,4 @@
 import css from './Contact.module.scss'
-import {Input} from "../components/Input/Input";
 import emailjs from 'emailjs-com';
 import {useState} from "react";
 import  './../components/Input/Input.module.scss'

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import css from './Header.module.scss'
-import {MenuOff} from "./MenuOff";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const UpMenu = [
     {id: 1, title: 'Main Page'},
@@ -25,8 +24,8 @@ export const Header = () => {
 
         <div >
             <div className={css.wrapper} >
-                <div className={accordion ? css.menu : css.menu_active}>
-                    <div className={css.stopProppagation} onClick={menuOff}>
+                <div className={accordion ? css.menu : css.menu_active}  onClick={menuOff}>
+                    <div className={css.stopProppagation} >
                     <NavLink to="#" className={css.menu_btm} onClick={menu}> </NavLink>
                         <nav className={css.menu_list} >
 
