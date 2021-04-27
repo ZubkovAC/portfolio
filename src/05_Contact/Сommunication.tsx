@@ -21,6 +21,8 @@ const ContactInput: ContactInputType[] = [
 
 export const Communication = () => {
 
+    const [edit,setEdit]=useState<boolean>(true)
+
     const [name,setName]=useState<string>('')
     const [email,setEmail]=useState<string>('')
     const [phone,setPhone]=useState<any>(null)
@@ -28,17 +30,43 @@ export const Communication = () => {
 
     const testName =(value:string) => {
         setName(value)
+        testButton()
     }
     const testEmail =(value:string) => {
         setEmail(value)
+        testButton()
     }
     const testPhone =(value:number) => {
         setPhone(value)
+        testButton()
     }
     const testMessage =(value:string) => {
         setMessage(value)
+        testButton()
     }
 
+    const testButton = ()=>{
+        if (name.length >= 3){
+            if (email.length >= 11){
+                if(phone >= 10000000000){
+                    if (message.length >= 8){
+                        setEdit(false)
+                    }
+                }
+            }
+        }
+        else{
+            setEdit(true)
+        }
+    }
+    const sendMessage = ()=>{
+        setEdit(true)
+        setName('')
+        setEmail('')
+        setPhone(null)
+        setMessage('')
+        alert("your message has been sent")
+    }
 
     const sendEmail = (e: any) => {
             e.preventDefault();
@@ -83,8 +111,7 @@ export const Communication = () => {
                                name={ContactInput[3].name}
                                type={ContactInput[3].type}/>
                     </div>
-
-                        <button>'Send'</button>
+                        <button disabled={ edit && edit } onClick={sendMessage} >'Send'</button>
                     {/*{*/}
                     {/*    ContactInput.map(c => {*/}
                     {/*        return <Input key={c.id} value={c.value} title={c.title}  onText={testLength} name={c.name} type={c.type}/>*/}
