@@ -115,3 +115,53 @@ textarea{
         font-size: 18px;
     }
 }
+
+
+.buttonOff button{
+    font-family: Teko,Arial,Helvetica,sans-serif;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    opacity: 0.6;
+    background-color:rgba(0,0,0,0);
+    color:grey;
+    font-weight: 600;
+    position: relative;
+    align-items: center;
+    top:10px;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow:0 0 10px white;
+    transition: 0.5s;
+}
+
+
+.buttonOn button{
+    border-radius: 20px;
+    font-family: Teko,Arial,Helvetica,sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    opacity: 0.6;
+    background-color:rgba(0,0,0,0);
+    color:white;
+    font-weight: 600;
+    position: relative;
+    align-items: center;
+    top:10px;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow:0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,0 0 10px $ColorFaceName;
+    transition: 0.5s;
+}
+.buttonOn button:hover{
+    box-shadow:
+            0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
+            inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName;
+
+}
+.buttonOn button:active{
+    border: 2px solid $ColorFaceName;
+    box-shadow:
+            0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
+            inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName;
+}

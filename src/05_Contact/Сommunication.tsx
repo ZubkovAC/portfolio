@@ -67,13 +67,13 @@ export const Communication = () => {
         alert("your message has been sent")
     }
 
-    const sendEmail = (e: any) => {
+    function sendEmail  (e: any) {
             e.preventDefault();
 
             emailjs.sendForm('service_mtj7tps', 'template_zl9m2rl', e.target,
                 'user_MBKEz0Lx85KlXMgE8JZop')
                 .then((result) => {
-                    console.log(result.text);
+                    console.log(result);
                 }, (error) => {
                     console.log(error.text);
                 });
@@ -86,38 +86,40 @@ export const Communication = () => {
             <form className="contact-form" onSubmit={sendEmail}>
                 <div className={css.communication_table}>
                     <div className='input_wrapper'>
-                        <input key={ContactInput[0].id} value={name} placeholder={ContactInput[0].title}
-                               onChange={e=>testName(e.currentTarget.value)}
-                               name={ContactInput[0].name}
-                               type={ContactInput[0].type}/>
+                        <input key={ContactInput[0].id}  placeholder={ContactInput[0].title}
+                               // onChange={e=>testName(e.currentTarget.value)}value={name}
+                               name={'name'}
+                               type={'text'}/>
                     </div>
+
                    <div className='input_wrapper'>
-                       <input key={ContactInput[1].id} value={email} placeholder={ContactInput[1].title}
-                              onChange={e=>testEmail(e.currentTarget.value)}
-                              name={ContactInput[1].name}
-                              type={ContactInput[1].type}/>
+                       <input key={ContactInput[1].id} placeholder={ContactInput[1].title}
+                              // onChange={e=>testEmail(e.currentTarget.value)} value={email}
+                              name={"email"}
+                              type={"text"}/>
                    </div>
 
                     <div className='input_wrapper'>
-                        <input key={ContactInput[2].id} value={phone} placeholder={ContactInput[2].title}
-                               onChange={e=>testPhone(+e.currentTarget.value)}
-                               name={ContactInput[2].name}
-                               type={ContactInput[2].type}/>
+                        <input key={ContactInput[2].id} placeholder={ContactInput[2].title}
+                               // onChange={e=>testPhone(+e.currentTarget.value)} value={phone}
+                               name="phone"
+                               type="number"/>
                     </div>
-                    <div className='input_wrapper'>
-                        <input key={ContactInput[3].id} value={message} placeholder={ContactInput[3].title}
-                               onChange={e=>testMessage(e.currentTarget.value)}
-                               name={ContactInput[3].name}
-                               type={ContactInput[3].type}/>
-                    </div>
-                        <button disabled={ edit && edit } onClick={sendMessage} >'Send'</button>
-                    {/*{*/}
-                    {/*    ContactInput.map(c => {*/}
-                    {/*        return <Input key={c.id} value={c.value} title={c.title}  onText={testLength} name={c.name} type={c.type}/>*/}
-                    {/*    })*/}
-                    {/*}*/}
-                </div>
 
+
+                    <div className='input_wrapper'>
+                        <input key={ContactInput[3].id}  placeholder={ContactInput[3].title}
+                               // onChange={e=>testMessage(e.currentTarget.value)} value={message}
+                               name="message"
+                               type="text"/>
+                    </div>
+
+                    <div className={css.button}>
+                        <div className={ edit ? css.buttonOn : css.buttonOff}>
+                            <button disabled={ !edit && edit } onClick={sendMessage} >Send</button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     )

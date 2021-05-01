@@ -10,7 +10,7 @@ import social from '../img/MyWorks/social.jpg'
 const MyWorks = [
     {id:1,title:'Todolists',message:'this is a simple to-do list or task list. Write down all your important things in ' +
             'it, so as not to forget. "To-do list" will allow you to organize your working time effectively.'
-        ,img:todolist,https:'https://zubkovac.github.io/Samurai/#/'},
+        ,img:todolist,https:'https://zubkovac.github.io/TodoList/#/'},
     {id:2,title:'Social NetWork',message:'The social network (abbr. A social network is an online platform that is used' +
             ' for communication, dating, creating social relationships between people who have similar interests or ' +
             'offline connections, as well as for entertainment (music, movies) and work.',img:social

@@ -9,6 +9,11 @@
         margin:0px;
         padding: 5px;
     }
+    @media screen and (max-width: 600px){
+        height:20px;
+        margin:0px;
+        padding: 5px;
+    }
     @media screen and (max-width: 450px){
         height:80px;
         margin:0px;
@@ -49,7 +54,6 @@
 }
 .menu_list{
     display: flex;
-    //justify-content: space-between;
     margin-top:50px;
     align-items: center;
     height: 100%;
