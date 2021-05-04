@@ -15,7 +15,7 @@ export const Table = (props:TablePropsType) => {
             <TitleTable title={props.title}/>
             <div className={css.table_table_message} >
                 <ul>
-                {props.message.map(mes=><div> {mes}</div>)}
+                {props.message.map(mes=><div className={css.mes}> {mes}</div>)}
                 </ul>
             </div>
         </div>

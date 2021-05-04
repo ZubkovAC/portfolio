@@ -3,6 +3,10 @@
     font-family: VerminVibes2soft;
     src: url("../../Fonts/VerminVibes2soft.otf") format("truetype");
 }
+@font-face {
+    font-family: Coalition;
+    src: url("../../Fonts/Coalition.ttf") format("truetype");
+}
 .title_container{
     display: flex;
     justify-content: center;
@@ -11,16 +15,30 @@
         font-family: VerminVibes2soft;
         letter-spacing: 2px;
         padding:20px;
-        color:$ColorTitle;
+        color:$ColorFaceName;
         justify-content: center;
+        text-shadow: 0 0 15px whitesmoke ;
+        transition: 1s;
         @media screen and(min-width: 350px){
             font-size: 26px;
         }
         @media screen and(min-width: 700px){
             font-size: 35px;
         }
+        @media screen and(min-width: 1350px){
+            font-size: 40px;
+        }
+        @media screen and(min-width: 2400px) {
+            font-size: 50px;
+        }
+        @media screen and(min-width: 3400px) {
+            font-size: 60px;
+        }
 
         }
+    }
+    .title:hover{
+        text-shadow: 0 0 15px whitesmoke,0 0 15px whitesmoke , 0 0 15px whitesmoke ;; ;
     }
     .title::before {
         content:'';

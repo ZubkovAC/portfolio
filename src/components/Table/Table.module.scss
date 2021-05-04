@@ -32,8 +32,13 @@
   }
   @media screen and (min-width: 2400px){
     width: 580px;
-    padding: 20px;
+    padding: 30px;
     margin: 60px ;
+  }
+  @media screen and (min-width: 3400px){
+    width: 880px;
+    padding: 40px;
+    margin: 100px ;
   }
   .table_table_Title {
 
@@ -50,6 +55,21 @@
     }
     @media screen and (min-width: 1350px){
       font-size: 30px;
+    }
+    @media screen and (min-width: 2400px){
+      font-size: 40px;
+      display: flex;
+      padding-left:40px ;
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: 3400px){
+      font-size: 50px;
+    }
+    .mes{
+      @media screen and (min-width: 2400px){
+        display: flex;
+        justify-content: flex-start;
+      }
     }
   }
 }

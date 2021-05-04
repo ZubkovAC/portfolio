@@ -28,13 +28,37 @@
     color: $ColorFaceName;
 }
 .Test1{
-    font-size: 75px
+    font-size: 75px;
+    @media screen and (min-width: 2000px){
+        font-size: 105px;
+
+    }
+    @media screen and (min-width: 3000px){
+        font-size: 155px;
+
+    }
 }
 .Test2{
-    font-size: 55px
+    font-size: 55px;
+    @media screen and (min-width: 2000px){
+        font-size: 75px;
+
+    }
+    @media screen and (min-width: 3000px){
+        font-size: 95px;
+
+    }
 }
 .Test3{
     font-size: 75px;
+    @media screen and (min-width: 2000px){
+        font-size: 105px;
+
+    }
+    @media screen and (min-width: 3000px){
+        font-size: 155px;
+
+    }
 }
 .h3_text {
     font-family:Coalition;
@@ -44,6 +68,7 @@
         font-size: 25px;
 
     }
+
 
 }
 

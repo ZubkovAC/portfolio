@@ -2,6 +2,17 @@
 .work_container{
   margin: 20px;
 }
+img {
+  @media screen and (min-width: 1350px){
+    width: 350px;
+  }@media screen and (min-width: 2400px){
+  width: 450px;
+}
+  @media screen and (min-width: 3400px){
+  width: 800px;
+}
+}
+
 .work_message{
   display: flex;
   flex-direction: column;
@@ -22,6 +33,7 @@
     width: 350px;
   }
   @media screen and (min-width: 700px){
+    font-size: 25px;
     padding: 60px;
     width: 600px;
     margin-bottom: 40px;
@@ -32,9 +44,22 @@
     margin-bottom:  0px;
   }
   @media screen and (min-width: 1350px){
+    font-size: 25px;
     padding: 60px;
-    width: 600px;
+    width: 550px;
     margin-bottom:  0px;
   }
+  @media screen and (min-width: 2400px){
+    font-size: 28px;
+    float: right;
+    width: 700px;
+  }
+  @media screen and (min-width: 3400px){
+    font-size: 50px;
+    padding: 80px;
+    float: right;
+    width: 1200px;
+  }
+
 
 }

@@ -21,10 +21,17 @@
             @media screen and (min-width: 1000px){
                 margin-bottom: -20px;
             }
+
             .footer_copy{
                 color:$ColorAutograph;
                 padding-left: 30px;
                 font-family: VerminVibes2soft;
+                @media screen and (min-width: 2400px){
+                    font-size: 25px;
+                }
+                @media screen and (min-width: 3400px){
+                    font-size: 35px;
+                }
             }
         }
     }
@@ -37,7 +44,20 @@
         }
         @media screen and (min-width: 1000px){
             padding: 20px;
+            width: 80px;
+        }
+        @media screen and (min-width: 1400px){
+            margin-left: 20px;
+            padding: 20px;
             width: 100px;
+        }
+        @media screen and (min-width: 2400px){
+            padding: 20px;
+            width: 120px;
+        }
+        @media screen and (min-width: 3400px){
+            padding: 20px;
+            width: 180px;
         }
     }
 }

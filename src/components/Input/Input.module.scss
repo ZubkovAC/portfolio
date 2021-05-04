@@ -75,4 +75,16 @@ input {
     margin: 0px auto;
     font-size: 1.2rem;
   }
+  @media screen and (min-width: 2400px) {
+
+    width: 350px;
+    margin: 0px auto;
+    font-size: 1.4rem;
+  }
+  @media screen and (min-width: 3400px) {
+
+    width: 350px;
+    margin: 0px auto;
+    font-size: 1.8rem;
+  }
 }

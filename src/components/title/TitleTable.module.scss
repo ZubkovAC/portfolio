@@ -17,7 +17,9 @@
   @media screen and(min-width: 750px) {
     font-size: 170px;
   }
-
+  @media screen and (min-width: 2400px){
+    justify-content: start;
+  }
   .title_table {
     font-family: VerminVibes2soft;
     letter-spacing: 2px;
@@ -39,8 +41,18 @@
       font-size: 26px;
     }
     @media screen and(min-width: 750px) {
+      font-size: 28px;
+    }
+    @media screen and(min-width: 1350px) {
       font-size: 30px;
     }
+    @media screen and(min-width: 2400px) {
+      font-size: 35px;
+    }
+    @media screen and(min-width: 3400px) {
+      font-size: 45px;
+    }
+
 
   }
 }

@@ -39,8 +39,6 @@ export const Header = () => {
                                     {UpMenu[3].title}</a>
                                 <NavLink to="/" className={css.header} activeClassName={css.active}>
                                     {UpMenu[4].title}</NavLink>
-
-
                         </nav>
                     </div>
                 </div>

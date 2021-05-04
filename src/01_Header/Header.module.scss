@@ -3,7 +3,16 @@
     height: 60px;
     display: flex;
     flex-wrap: wrap;
-
+    @media screen and (min-width: 2400px){
+        height:100px;
+        margin:0px;
+        padding: 10px;
+    }
+    @media screen and (max-width: 1400px){
+        height:40px;
+        margin:0px;
+        padding: 10px;
+    }
     @media screen and (max-width: 850px){
         height:30px;
         margin:0px;
@@ -19,6 +28,7 @@
         margin:0px;
         padding: 5px;
     }
+
     .header_box{
         display: flex;
         margin: 10px;
@@ -45,6 +55,13 @@
     color: #386a82;
     font-weight: 600;
     transition: 1s;
+    @media screen and (min-width: 2400px){
+        width: 250px;
+    }
+    @media screen and (min-width: 3400px){
+        width: 400px;
+    }
+
 }
 
 .header:hover{
@@ -69,6 +86,12 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
+    @media screen and (min-width: 2400px){
+        font-size: 35px;
+    }
+    @media screen and (min-width: 3400px){
+        font-size: 45px;
+    }
 }
 .menu{
     position: fixed;
@@ -84,6 +107,8 @@
     transition: 0.5s;
     transform: translateX(-104%);
     box-shadow:  0 0 10px maroon;
+
+
 
     @media screen and (max-width: 850px){
         transform: translateX(-112%);
@@ -106,6 +131,7 @@
     transition: 0.5s;
     transform:translateX(0%);
     box-shadow:  0 0 10px white;
+
     @media screen and (max-width: 850px){
         width: 100%;
         opacity: 0.8;
@@ -125,13 +151,34 @@
     margin: 20px;
     box-shadow:0 0 10px white;
     transition: 0.5s;
+    @media screen and (min-width: 2400px){
+        width: 80px;
+        height: 80px;
+        right: -140px;
+        box-shadow:0 0 20px white,0 0 20px white;
+    }
+    @media screen and (min-width: 3400px){
+        width: 120px;
+        height: 120px;
+        right: -200px;
+        box-shadow:0 0 20px white,0 0 20px white,0 0 20px white,0 0 20px white;
+    }
 }
 .menu_btm:hover{
     background-color:rgba(0,0,0,0) ;
     box-shadow:
             0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
         inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName;
-
+    @media screen and (min-width: 2400px){
+        box-shadow:
+                0 0 20px $ColorFaceName,0 0 20px $ColorFaceName,
+                inset 0 0 20px $ColorFaceName,inset 0 0 20px $ColorFaceName;
+    }
+    @media screen and (min-width: 3400px){
+        box-shadow:
+                0 0 30px $ColorFaceName,0 0 30px $ColorFaceName,
+                inset 0 0 30px $ColorFaceName,inset 0 0 30px $ColorFaceName;
+    }
 
 
 }
@@ -142,6 +189,20 @@
             inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName,
             0 0 15px white,0 0 15px white,
             inset 0 0 15px white, inset 0 0 15px white;
+    @media screen and (min-width: 2400px){
+        box-shadow:
+                0 0 20px $ColorFaceName,0 0 20px $ColorFaceName,
+                inset 0 0 20px $ColorFaceName,inset 0 0 20px $ColorFaceName,
+                0 0 25px white,0 0 25px white,
+                inset 0 0 25px white, inset 0 0 25px white;
+    }
+    @media screen and (min-width: 3400px){
+        box-shadow:
+                0 0 20px $ColorFaceName,0 0 20px $ColorFaceName,
+                inset 0 0 20px $ColorFaceName,inset 0 0 20px $ColorFaceName,
+                0 0 25px white,0 0 25px white,
+                inset 0 0 25px white, inset 0 0 25px white;
+    }
 }
 
 //#386a82

@@ -9,10 +9,12 @@
         font-size: 30px;
 
     }
+
     .works_Title{
         font-size: 30px;
         padding-top: 30px;
     }
+
     .box_works{
         display: flex;
         justify-content: space-around;
@@ -35,8 +37,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin: 0 auto;
-
         }
+        @media screen and (min-width: 2400px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: start;
+            justify-items:center;
+        }
+
 
 
     }

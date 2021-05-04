@@ -21,6 +21,15 @@
     @media screen and (min-width: 350px){
         padding: 0px;
     }
+    @media screen and (min-width: 1350px){
+        padding: 20px;
+    }
+    @media screen and (min-width: 2400px){
+        padding: 40px;
+    }
+    @media screen and (min-width: 3400px){
+        padding: 60px;
+    }
 
     .contact_container{
         font-size: 25px;
@@ -44,7 +53,6 @@
         }
 
         .thoughts{
-            max-width: 800px;
            /* border: 1px solid dodgerblue;*/
             padding: 5px;
 
@@ -55,22 +63,44 @@
                 display: inline;
                 width-min: 450px;
                 padding: 20px;
-
             }
+
             @media screen and (min-width: 1350px){
-                display: inline;
                 width-min: 650px;
-
             }
+
+            @media screen and (min-width: 2400px){
+                width-min: 850px;
+            }
+
+            @media screen and (min-width: 3400px){
+                width-min: 1250px;
+            }
+
             .h3_title{
                 color:$ColorGreatSayings;
                 font-family:Coalition;
                 letter-spacing: 2px;
                 padding: 40px;
+                @media screen and (min-width: 2400px){
+                    font-size: 40px;
+                    display: inline;
+                    padding: 20px;
+                }
+                @media screen and (min-width: 3400px){
+                    font-size: 50px;
+                }
             }
             .great_sayings{
                 padding: 20px;
                 font-family:Teko,Arial,Helvetica,sans-serif;
+                @media screen and (min-width: 2400px){
+                    font-size: 35px;
+                }
+
+                @media screen and (min-width: 3400px){
+                    font-size: 50px;
+                }
             }
         }
 
