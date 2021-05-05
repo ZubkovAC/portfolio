@@ -187,6 +187,11 @@ textarea{
     box-shadow:
             0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
             inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName;
+    @media screen and (min-width: 2400px) {
+        box-shadow:
+                0 0 20px $ColorFaceName,0 0 20px $ColorFaceName,
+                inset 0 0 20px $ColorFaceName,inset 0 0 20px $ColorFaceName;
+    }
 
 }
 .buttonOn button:active{
@@ -194,4 +199,22 @@ textarea{
     box-shadow:
             0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,
             inset 0 0 10px $ColorFaceName,inset 0 0 10px $ColorFaceName;
+    @media screen and (min-width: 2400px) {
+        box-shadow:
+                0 0 20px $ColorFaceName,0 0 20px $ColorFaceName,
+                inset 0 0 20px $ColorFaceName,inset 0 0 20px $ColorFaceName;
+    }
+}
+.button{
+    @media screen and (min-width: 1400px) {
+        font-size: 25px;
+        padding: 5px;
+    }
+    @media screen and (min-width: 2400px) {
+        font-size: 30px;
+        padding: 10px;
+    }
+    @media screen and (min-width: 3400px) {
+        font-size: 60px;
+    }
 }
