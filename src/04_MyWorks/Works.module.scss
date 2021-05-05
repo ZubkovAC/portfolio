@@ -38,30 +38,16 @@
             grid-template-columns: 1fr 1fr;
             margin: 0 auto;
         }
-        @media screen and (min-width: 2400px){
+        @media screen and (min-width: 1400px){
             display: grid;
             grid-template-columns: 1fr 1fr;
             text-align: start;
             justify-items:center;
         }
 
-
-
     }
 }
 
-/*.works_Title::before {
-    content:'';
-    position: absolute;
-    margin: 0 0 30px;
-    width: 80px;
-    height:4px;
-    bottom:-180px;
-    border-radius: 2px;
-    background-color: #79fefd;
-    left:50%;
-    transform: translate(-50%,50%);
-}*/
 .box_skills_table{
     margin: 30px;
 }
