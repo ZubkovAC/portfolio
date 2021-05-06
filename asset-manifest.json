@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cda038bb.chunk.css",
-    "main.js": "/portfolio/static/js/main.8c12b6a7.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8c12b6a7.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.b91aecad.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b91aecad.js.map",
-    "static/js/2.b7dd8d38.chunk.js": "/portfolio/static/js/2.b7dd8d38.chunk.js",
-    "static/js/2.b7dd8d38.chunk.js.map": "/portfolio/static/js/2.b7dd8d38.chunk.js.map",
-    "static/js/3.5173e84d.chunk.js": "/portfolio/static/js/3.5173e84d.chunk.js",
-    "static/js/3.5173e84d.chunk.js.map": "/portfolio/static/js/3.5173e84d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.9dc6f8c8.chunk.css",
+    "main.js": "/portfolio/static/js/main.dcaa6d73.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dcaa6d73.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.329b93b2.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.329b93b2.js.map",
+    "static/js/2.56b71a74.chunk.js": "/portfolio/static/js/2.56b71a74.chunk.js",
+    "static/js/2.56b71a74.chunk.js.map": "/portfolio/static/js/2.56b71a74.chunk.js.map",
+    "static/js/3.2e30eeac.chunk.js": "/portfolio/static/js/3.2e30eeac.chunk.js",
+    "static/js/3.2e30eeac.chunk.js.map": "/portfolio/static/js/3.2e30eeac.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.cda038bb.chunk.css.map": "/portfolio/static/css/main.cda038bb.chunk.css.map",
-    "static/js/2.b7dd8d38.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b7dd8d38.chunk.js.LICENSE.txt",
+    "static/css/main.9dc6f8c8.chunk.css.map": "/portfolio/static/css/main.9dc6f8c8.chunk.css.map",
+    "static/js/2.56b71a74.chunk.js.LICENSE.txt": "/portfolio/static/js/2.56b71a74.chunk.js.LICENSE.txt",
     "static/media/Title.module.scss": "/portfolio/static/media/VerminVibes2soft.ea84ba86.otf",
     "static/media/Input.module.scss": "/portfolio/static/media/Teko.d694a156.ttf",
     "static/media/Face.module.scss": "/portfolio/static/media/tron-face.2f120b20.jpg",
@@ -22,9 +22,9 @@
     "static/media/todolist.18096f47.jpg": "/portfolio/static/media/todolist.18096f47.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b91aecad.js",
-    "static/js/2.b7dd8d38.chunk.js",
-    "static/css/main.cda038bb.chunk.css",
-    "static/js/main.8c12b6a7.chunk.js"
+    "static/js/runtime-main.329b93b2.js",
+    "static/js/2.56b71a74.chunk.js",
+    "static/css/main.9dc6f8c8.chunk.css",
+    "static/js/main.dcaa6d73.chunk.js"
   ]
 }
