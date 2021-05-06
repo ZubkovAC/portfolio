@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import css from './Header.module.scss'
+import { Link, animateScroll as scroll } from "react-scroll";
 import {NavLink} from "react-router-dom";
 
 const UpMenu = [
@@ -29,15 +30,44 @@ export const Header = () => {
                     <NavLink to="#" className={css.menu_btm} onClick={menu}> </NavLink>
                         <nav className={css.menu_list} >
 
-                                <a href="#" className={css.header} >
-                                    {UpMenu[0].title}</a>
-                                <a href="#MySkiils" className={css.header} >
-                                    {UpMenu[1].title}</a>
-                                <a href="#MyWorks" className={css.header} >
-                                    {UpMenu[2].title}</a>
-                                <a href="#Contact"   className={css.header} >
-                                    {UpMenu[3].title}</a>
-                                <NavLink to="/" className={css.header} activeClassName={css.active}>
+                                <Link
+                                    to="MainPage"
+                                    className={css.header}
+                                    activeClass={css.active}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >{UpMenu[0].title}</Link>
+                                <Link
+                                    to="MySkiils"
+                                    className={css.header}
+                                    activeClass={css.active}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >{UpMenu[1].title}</Link>
+                                <Link
+                                    to="MyWorks"
+                                    className={css.header}
+                                    activeClass={css.active}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={1}
+                                    duration={500}
+                                >{UpMenu[2].title}</Link>
+                                <Link
+                                    to="Contact"
+                                    className={css.header}
+                                    activeClass={css.active}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={1750}
+                                    duration={500}
+                                >{UpMenu[3].title}</Link>
+
+                                <NavLink to="/" className={css.header} >
                                     {UpMenu[4].title}</NavLink>
                         </nav>
                     </div>
