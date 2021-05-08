@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import css from './Header.module.scss'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import {NavLink} from "react-router-dom";
 
 const UpMenu = [
@@ -31,6 +31,7 @@ export const Header = () => {
                         <nav className={css.menu_list} >
 
                                 <Link
+                                    onClick={menuOff}
                                     to="MainPage"
                                     className={css.header}
                                     activeClass={css.active}
@@ -40,6 +41,7 @@ export const Header = () => {
                                     duration={500}
                                 >{UpMenu[0].title}</Link>
                                 <Link
+                                    onClick={menuOff}
                                     to="MySkiils"
                                     className={css.header}
                                     activeClass={css.active}
@@ -49,6 +51,7 @@ export const Header = () => {
                                     duration={500}
                                 >{UpMenu[1].title}</Link>
                                 <Link
+                                    onClick={menuOff}
                                     to="MyWorks"
                                     className={css.header}
                                     activeClass={css.active}
@@ -58,6 +61,7 @@ export const Header = () => {
                                     duration={500}
                                 >{UpMenu[2].title}</Link>
                                 <Link
+                                    onClick={menuOff}
                                     to="Contact"
                                     className={css.header}
                                     activeClass={css.active}
