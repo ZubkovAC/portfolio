@@ -2,6 +2,7 @@ import css from './Contact.module.scss'
 import emailjs from 'emailjs-com';
 import {useState} from "react";
 import './../components/Input/Input.module.scss'
+import toast, { Toaster } from 'react-hot-toast';
 
 type ContactInputType = {
     id: number
@@ -58,14 +59,6 @@ export const Communication = () => {
             setEdit(true)
         }
     }
-    const sendMessage = () => {
-        setEdit(true)
-        setName('')
-        setEmail('')
-        setPhone(null)
-        setMessage('')
-        alert("your message has been sent")
-    }
 
     function sendEmail(e: any) {
         e.preventDefault();
@@ -78,6 +71,15 @@ export const Communication = () => {
                 console.log(error.text);
             });
         e.target.reset()
+    }
+
+    const notify = () => {
+        setEdit(true)
+        setName('')
+        setEmail('')
+        setPhone(null)
+        setMessage('')
+        toast.success('Message sent!')
     }
 
     return (
@@ -116,13 +118,14 @@ export const Communication = () => {
 
 
                     <div className={edit ? css.buttonOn : css.buttonOff}>
-                        <button disabled={!edit && edit} onClick={sendMessage}>
-                            <span className={css.button}>Send</span>
-                        </button>
+                        <button onClick={notify}>Send</button>
+                        <Toaster
+                            position="top-center"
+                            reverseOrder={false}
+                        />
                     </div>
                 </div>
             </form>
         </div>
     )
-
 }
