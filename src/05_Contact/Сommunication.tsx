@@ -3,6 +3,16 @@ import emailjs from 'emailjs-com';
 import {useState} from "react";
 import './../components/Input/Input.module.scss'
 import toast, { Toaster } from 'react-hot-toast';
+import React from "react";
+import ReactDOM from "react-dom";
+import { useForm } from "react-hook-form";
+
+interface IFormInput {
+    firstName: string
+    email:string
+    phone:number
+    message:string
+}
 
 type ContactInputType = {
     id: number
@@ -22,11 +32,11 @@ const ContactInput: ContactInputType[] = [
 
 export const Communication = () => {
 
-    const [edit, setEdit] = useState<boolean>(true)
+    const [edit, setEdit] = useState<boolean>(false)
 
     const [name, setName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
-    const [phone, setPhone] = useState<any>(null)
+    const [phone, setPhone] = useState<any>('')
     const [message, setMessage] = useState<string>('')
 
     const testName = (value: string) => {
@@ -47,6 +57,7 @@ export const Communication = () => {
     }
 
     const testButton = () => {
+        console.log(name)
         if (name.length >= 3) {
             if (email.length >= 11) {
                 if (phone >= 10000000000) {
@@ -61,7 +72,9 @@ export const Communication = () => {
     }
 
     function sendEmail(e: any) {
+        console.log(e)
         e.preventDefault();
+
 
         emailjs.sendForm('service_mtj7tps', 'template_zl9m2rl', e.target,
             'user_MBKEz0Lx85KlXMgE8JZop')
@@ -70,55 +83,71 @@ export const Communication = () => {
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset()
+        setName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+
+        setEdit(true)
+        // e.reset()
     }
 
     const notify = () => {
-        setEdit(true)
-        setName('')
-        setEmail('')
-        setPhone(null)
-        setMessage('')
         toast.success('Message sent!')
     }
+
+    console.log(edit)
+    // let wrapper = document.querySelector(".input-wrapper")
+    // let textInput = document.querySelector("input[type='text']")
+    //
+    // textInput && textInput.addEventListener("keyup", event => {
+    //     // @ts-ignore
+    //     wrapper && wrapper.setAttribute("data-text", event && event.target.value);
+    // });
+
+
 
     return (
         <div className={css.communication}>
 
+
+
             <form className="contact-form" onSubmit={sendEmail}>
                 <div className={css.communication_table}>
-                    <div className='input_wrapper'>
+                    <div className='input_wrapper' data-name=''>
                         <input key={ContactInput[0].id} placeholder={ContactInput[0].title}
-                            // onChange={e=>testName(e.currentTarget.value)}value={name}
+                            onChange={e=>testName(e.currentTarget.value)}value={name}
+
                                name={'name'}
                                type={'text'}/>
                     </div>
 
-                    <div className='input_wrapper'>
+                    <div className='input_wrapper' data-email=''>
                         <input key={ContactInput[1].id} placeholder={ContactInput[1].title}
-                            // onChange={e=>testEmail(e.currentTarget.value)} value={email}
+                            onChange={e=>testEmail(e.currentTarget.value)} value={email}
+
                                name={"email"}
-                               type={"text"}/>
+                               type="text"/>
                     </div>
 
-                    <div className='input_wrapper'>
+                    <div className='input_wrapper' data-text=''>
                         <input key={ContactInput[2].id} placeholder={ContactInput[2].title}
-                            // onChange={e=>testPhone(+e.currentTarget.value)} value={phone}
+                            onChange={e=>testPhone(+e.currentTarget.value)} value={phone}
                                name="phone"
-                               type="number"/>
+                               type="text"/>
                     </div>
 
 
                     <div className='input_wrapper'>
                         <input key={ContactInput[3].id} placeholder={ContactInput[3].title}
-                            // onChange={e=>testMessage(e.currentTarget.value)} value={message}
+                            onChange={e=>testMessage(e.currentTarget.value)} value={message}
+
                                name="message"
                                type="text"/>
                     </div>
 
-
-                    <div className={edit ? css.buttonOn : css.buttonOff}>
-                        <button onClick={notify}>Send</button>
+                    <div  className={!edit ? css.buttonOn : css.buttonOff}>
+                        <button disabled={edit} onClick={notify}>Send</button>
                         <Toaster
                             position="top-center"
                             reverseOrder={false}
@@ -126,6 +155,7 @@ export const Communication = () => {
                     </div>
                 </div>
             </form>
+
         </div>
     )
 }

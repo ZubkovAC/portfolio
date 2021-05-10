@@ -22,13 +22,14 @@ input::-webkit-inner-spin-button {
     margin: 0px auto;
     font-size: 1rem;
   }
+  //Teko,Arial,Helvetica,sans-serif;
   .input_wrapper::after {
-    content: attr(data_text);
+    content: attr(data-text);
     font-size: 1.5rem;
     line-height: 0;
     height: 0;
     max-width: 100%;
-    font-family: Teko,Arial,Helvetica,sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     border-bottom: 3px solid darkred;
     position: absolute;
     left: 0;
