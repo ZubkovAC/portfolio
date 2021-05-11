@@ -1,6 +1,6 @@
 import css from './Contact.module.scss'
 import emailjs from 'emailjs-com';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import './../components/Input/Input.module.scss'
 import toast, { Toaster } from 'react-hot-toast';
 import React from "react";
@@ -39,6 +39,11 @@ export const Communication = () => {
     const [phone, setPhone] = useState<any>('')
     const [message, setMessage] = useState<string>('')
 
+
+    useEffect( () => {
+        testButton()
+    },[name,email,phone,message])
+
     const testName = (value: string) => {
         setName(value)
         testButton()
@@ -52,20 +57,12 @@ export const Communication = () => {
         testButton()
     }
     const testMessage = (value: string) => {
-        setMessage(value)
         testButton()
+        setMessage(value)
     }
-
     const testButton = () => {
-        console.log(name)
-        if (name.length >= 3) {
-            if (email.length >= 11) {
-                if (phone >= 10000000000) {
-                    if (message.length >= 8) {
+        if ( name.length >= 3 && email.length >= 11 && phone >= 10000000000 && message.length >= 8 ) {
                         setEdit(false)
-                    }
-                }
-            }
         } else {
             setEdit(true)
         }
@@ -149,7 +146,6 @@ export const Communication = () => {
                         <input key={ContactInput[3].id}
                                // placeholder={ContactInput[3].title}
                             onChange={e=>testMessage(e.currentTarget.value)} value={message}
-
                                name="message"
                                type="text"/>
                     </div>

@@ -22,6 +22,7 @@ function App() {
                 <Works/>
                 <Contact/>
                 <Footer/>
+
                 {/*<Header2/>*/}
             </div>
 
