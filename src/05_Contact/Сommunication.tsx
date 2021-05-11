@@ -114,32 +114,40 @@ export const Communication = () => {
 
             <form className="contact-form" onSubmit={sendEmail}>
                 <div className={css.communication_table}>
-                    <div className='input_wrapper' data-name=''>
-                        <input key={ContactInput[0].id} placeholder={ContactInput[0].title}
+                    <div style={{marginTop:'30px'}} className='input_wrapper' data-name=''>
+                        <span style={{float:'left',marginTop:'10px'}}>name:</span>
+                        <input key={ContactInput[0].id}
+                               // placeholder={ContactInput[0].title}
                             onChange={e=>testName(e.currentTarget.value)}value={name}
 
                                name={'name'}
                                type={'text'}/>
                     </div>
 
-                    <div className='input_wrapper' data-email=''>
-                        <input key={ContactInput[1].id} placeholder={ContactInput[1].title}
+                    <div style={{marginTop:'30px'}} className='input_wrapper' data-email=''>
+                        <span style={{float:'left',marginTop:'10px'}}>email:</span>
+                        <input key={ContactInput[1].id}
+                               // placeholder={ContactInput[1].title}
                             onChange={e=>testEmail(e.currentTarget.value)} value={email}
 
                                name={"email"}
                                type="text"/>
                     </div>
 
-                    <div className='input_wrapper' data-text=''>
-                        <input key={ContactInput[2].id} placeholder={ContactInput[2].title}
+                    <div style={{marginTop:'30px'}} className='input_wrapper' data-text=''>
+                        <span style={{float:'left',marginTop:'10px'}}>phone:</span>
+                        <input key={ContactInput[2].id}
+                               // placeholder={ContactInput[2].title}
                             onChange={e=>testPhone(+e.currentTarget.value)} value={phone}
                                name="phone"
-                               type="text"/>
+                               type="number"/>
                     </div>
 
 
-                    <div className='input_wrapper'>
-                        <input key={ContactInput[3].id} placeholder={ContactInput[3].title}
+                    <div style={{marginTop:'30px'}} className='input_wrapper'>
+                        <span style={{float:'left',marginTop:'10px'}}>message:</span>
+                        <input key={ContactInput[3].id}
+                               // placeholder={ContactInput[3].title}
                             onChange={e=>testMessage(e.currentTarget.value)} value={message}
 
                                name="message"

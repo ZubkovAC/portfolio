@@ -67,7 +67,7 @@ export const Header = () => {
                                     activeClass={css.active}
                                     spy={true}
                                     smooth={true}
-                                    offset={1750}
+                                    offset={1}
                                     duration={500}
                                 >{UpMenu[3].title}</Link>
 
