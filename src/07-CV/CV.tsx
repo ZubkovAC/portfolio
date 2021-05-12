@@ -11,10 +11,12 @@ import cvPhoto from '../img/cv-2.jpg'
 
 export const CV = () => {
     const [active, setActive] = useState<boolean>(true)
+    const [target, setTarget] = useState<boolean>(false)
 
 
     useEffect(()=>{
         setTimeout(SetActive,0)
+        setTarget(true)
     },[])
 
 
@@ -28,10 +30,10 @@ export const CV = () => {
     return (
         <div className={css.CV}>
             <h3 className={css.CV_text} onClick={Switch}>CV</h3>
-            <Modal active={active} setActive={SetActive}>
-                {/*<img src={cvPhoto} className={css.img} alt="cv"/>*/}
+                <Modal active={active} setActive={SetActive} target={target} >
+                    {/*<img src={cvPhoto} className={css.img} alt="cv"/>*/}
                     <embed src={cvPdf} className={css.img} />
-            </Modal>
+                </Modal>
         </div>
     )
 }
