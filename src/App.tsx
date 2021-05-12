@@ -8,6 +8,7 @@ import {Footer} from "./06_Footer/Footer";
 import {Face} from "./02_Face/Face";
 import {MenuOff} from "./01_Header/MenuOff";
 import {NavLink} from "react-router-dom";
+import {CV} from "./07-CV/CV";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <div >
 
                 <Header/>
+                <CV/>
                 <Face/>
                 <Skills/>
                 <Works/>
