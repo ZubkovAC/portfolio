@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.02c2babc.chunk.css",
-    "main.js": "/portfolio/static/js/main.45b9e589.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.45b9e589.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.e33ee425.chunk.css",
+    "main.js": "/portfolio/static/js/main.415f0733.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.415f0733.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b6a8d141.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b6a8d141.js.map",
-    "static/js/2.081a9a73.chunk.js": "/portfolio/static/js/2.081a9a73.chunk.js",
-    "static/js/2.081a9a73.chunk.js.map": "/portfolio/static/js/2.081a9a73.chunk.js.map",
+    "static/js/2.6543c88a.chunk.js": "/portfolio/static/js/2.6543c88a.chunk.js",
+    "static/js/2.6543c88a.chunk.js.map": "/portfolio/static/js/2.6543c88a.chunk.js.map",
     "static/js/3.4e033e3e.chunk.js": "/portfolio/static/js/3.4e033e3e.chunk.js",
     "static/js/3.4e033e3e.chunk.js.map": "/portfolio/static/js/3.4e033e3e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.02c2babc.chunk.css.map": "/portfolio/static/css/main.02c2babc.chunk.css.map",
-    "static/js/2.081a9a73.chunk.js.LICENSE.txt": "/portfolio/static/js/2.081a9a73.chunk.js.LICENSE.txt",
+    "static/css/main.e33ee425.chunk.css.map": "/portfolio/static/css/main.e33ee425.chunk.css.map",
+    "static/js/2.6543c88a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6543c88a.chunk.js.LICENSE.txt",
     "static/media/Title.module.scss": "/portfolio/static/media/VerminVibes2soft.ea84ba86.otf",
     "static/media/Input.module.scss": "/portfolio/static/media/Teko.d694a156.ttf",
     "static/media/CV.module.scss": "/portfolio/static/media/Tr2n.fc83f9a0.ttf",
     "static/media/counter.1be7fc8a.jpg": "/portfolio/static/media/counter.1be7fc8a.jpg",
+    "static/media/cvPhoto.ea331f4e.pdf": "/portfolio/static/media/cvPhoto.ea331f4e.pdf",
     "static/media/packCard.0aec6f4e.jpg": "/portfolio/static/media/packCard.0aec6f4e.jpg",
     "static/media/pngegg.7df7529e.png": "/portfolio/static/media/pngegg.7df7529e.png",
     "static/media/social.a22c1016.jpg": "/portfolio/static/media/social.a22c1016.jpg",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b6a8d141.js",
-    "static/js/2.081a9a73.chunk.js",
-    "static/css/main.02c2babc.chunk.css",
-    "static/js/main.45b9e589.chunk.js"
+    "static/js/2.6543c88a.chunk.js",
+    "static/css/main.e33ee425.chunk.css",
+    "static/js/main.415f0733.chunk.js"
   ]
 }
