@@ -106,23 +106,19 @@ export const Communication = () => {
 
     return (
         <div className={css.communication}>
-
-
-
             <form className="contact-form" onSubmit={sendEmail}>
                 <div className={css.communication_table}>
-                    <div style={{marginTop:'30px'}} className='input_wrapper' data-name=''>
-                        <span style={{float:'left',marginTop:'10px'}}>name:</span>
+                    <div  className='input_wrapper' data-name=''>
+                        <div className={css.Span} >name:</div>
                         <input key={ContactInput[0].id}
                                // placeholder={ContactInput[0].title}
                             onChange={e=>testName(e.currentTarget.value)}value={name}
-
                                name={'name'}
                                type={'text'}/>
                     </div>
 
-                    <div style={{marginTop:'30px'}} className='input_wrapper' data-email=''>
-                        <span style={{float:'left',marginTop:'10px'}}>email:</span>
+                    <div  className='input_wrapper' data-email=''>
+                        <div className={css.Span} >email:</div>
                         <input key={ContactInput[1].id}
                                // placeholder={ContactInput[1].title}
                             onChange={e=>testEmail(e.currentTarget.value)} value={email}
@@ -131,8 +127,8 @@ export const Communication = () => {
                                type="text"/>
                     </div>
 
-                    <div style={{marginTop:'30px'}} className='input_wrapper' data-text=''>
-                        <span style={{float:'left',marginTop:'10px'}}>phone:</span>
+                    <div  className='input_wrapper' data-text=''>
+                        <div className={css.Span} >phone:</div>
                         <input key={ContactInput[2].id}
                                // placeholder={ContactInput[2].title}
                             onChange={e=>testPhone(+e.currentTarget.value)} value={phone}
@@ -141,8 +137,8 @@ export const Communication = () => {
                     </div>
 
 
-                    <div style={{marginTop:'30px'}} className='input_wrapper'>
-                        <span style={{float:'left',marginTop:'10px'}}>message:</span>
+                    <div  className='input_wrapper'>
+                        <div className={css.Span} >message:</div>
                         <input key={ContactInput[3].id}
                                // placeholder={ContactInput[3].title}
                             onChange={e=>testMessage(e.currentTarget.value)} value={message}

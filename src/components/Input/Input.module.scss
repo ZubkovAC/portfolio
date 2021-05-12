@@ -50,7 +50,6 @@ input {
   color: wheat;
   border: none;
   padding: 0;
-  //padding-bottom: 20px;
   border-radius: 0;
 
   outline: none;
@@ -65,13 +64,14 @@ input {
 
   @media screen and (min-width: 350px) {
     width: 270px;
-    margin: 0px auto;
+    margin: 30px auto;
     font-size: 20px;
   }
+
   @media screen and (min-width: 700px) {
 
     width: 400px;
-    margin: 0px auto;
+    margin: 20px auto;
     font-size: 1.2rem;
   }
   @media screen and (min-width: 1000px) {
@@ -79,11 +79,11 @@ input {
     width: 350px;
     margin: 0px auto;
     font-size: 1.2rem;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 2400px) {
-
+    margin-bottom: 60px;
     width: 350px;
-    margin: 0px auto;
     font-size: 1.6rem;
   }
   @media screen and (min-width: 3400px) {
@@ -104,10 +104,11 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 0;
+  border-bottom: 3px solid #386a82;
   -webkit-text-fill-color: navajowhite;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
   background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
 }
+
 

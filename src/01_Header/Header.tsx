@@ -71,8 +71,6 @@ export const Header = () => {
                                     duration={500}
                                 >{UpMenu[3].title}</Link>
 
-                                <NavLink to="/" className={css.header} >
-                                    {UpMenu[4].title}</NavLink>
                         </nav>
                     </div>
                 </div>

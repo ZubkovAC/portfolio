@@ -160,7 +160,7 @@ textarea{
     align-items: center;
     top:10px;
     padding: 10px;
-    margin: 20px auto;
+    //margin: 20px auto;
     box-shadow:0 0 10px white;
     transition: 0.5s;
 }
@@ -179,7 +179,6 @@ textarea{
     align-items: center;
     top:10px;
     padding: 10px;
-    margin: 20px auto;
     box-shadow:0 0 10px $ColorFaceName,0 0 10px $ColorFaceName,0 0 10px $ColorFaceName;
     transition: 0.5s;
 }
@@ -217,4 +216,10 @@ textarea{
     @media screen and (min-width: 3400px) {
         font-size: 60px;
     }
+}
+.Span{
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+
 }

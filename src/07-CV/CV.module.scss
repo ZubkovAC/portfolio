@@ -1,3 +1,4 @@
+@import "./../components/AllColor/AllColor";
 @font-face {
   font-family: Test;
   src: url("../Fonts/Tr2n.ttf") format("truetype");
@@ -16,7 +17,9 @@
   font-size: 35px;
   font-weight: 600;
   text-shadow:  0 0 15px red,0 0 15px white;
-
+  &:hover{
+    text-shadow:  0 0 15px $ColorFaceName,0 0 15px white;
+  }
   @media screen and (max-width: 1000px){
     display: none;
   }
