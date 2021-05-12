@@ -19,7 +19,6 @@ export const Modal = (props:ModalPropsType) => {
                 <div className={css.button}>
                     {props.children}
                 </div>
-
             </div>
         </div>
     )

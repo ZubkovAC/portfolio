@@ -19,32 +19,32 @@
   pointer-events: all;
 
 }
-.button  {
-  /*width: auto;*/
+.button img{
+  width: 45%;
   /*height: 500px;*/
   border:0px solid white;
   border-radius: 15px;
   padding: 50px;
   box-shadow: 0 0 5px 0 whitesmoke, inset 0 0 5px 0 whitesmoke;
-
 }
-.modal_content{
+
+.modal_content {
   padding: 20px;
   border-radius: 10px;
   width: 400px;
-  height: 400px;
+  /*height: 400px;*/
 
   background-color: black;
   transform: scale(0.5);
   transition: 0.4s all;
-
 
 }
 
 .modal_content.active {
   transform: scale(1);
   background-color: black;
-  width: 400px;
-  height: 400px;
+
+  /*width: 400px;*/
+  /*height: 400px;*/
 
 }
