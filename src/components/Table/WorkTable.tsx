@@ -23,6 +23,5 @@ export const WorkTable=(props:WorkPropsType)=>{
                 <p>{props.message}</p>
             </div>
         </div>
-
     )
 }

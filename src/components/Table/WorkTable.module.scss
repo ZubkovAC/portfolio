@@ -1,17 +1,29 @@
 @import '../AllColor/AllColor';
 .work_container{
   margin: 20px;
+  padding: 20px;
 }
-img {
-  @media screen and (min-width: 1350px){
+.work_container img {
+  transition: 0.7s;
+  @media screen and (min-width: 1350px) {
+    padding: 0;
     width: 350px;
-  }@media screen and (min-width: 2400px){
-  width: 450px;
+    box-shadow: 10px 10px 25px 0 $ColorText;
+  }
+  @media screen and (min-width: 2400px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 3400px) {
+    width: 800px;
+  }
 }
-  @media screen and (min-width: 3400px){
-  width: 800px;
+.work_container img:hover{
+  margin-left: 15px;
+  margin-bottom: -15px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px 0 white;
 }
-}
+
 
 .work_message{
   display: flex;
