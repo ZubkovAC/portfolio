@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.88691ddd.chunk.css",
-    "main.js": "/portfolio/static/js/main.01983c79.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.01983c79.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e750e35e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e750e35e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b6a8d141.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b6a8d141.js.map",
     "static/js/2.ef7eec5c.chunk.js": "/portfolio/static/js/2.ef7eec5c.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/Input.module.scss": "/portfolio/static/media/Teko.d694a156.ttf",
     "static/media/CV.module.scss": "/portfolio/static/media/Tr2n.fc83f9a0.ttf",
     "static/media/counter.1be7fc8a.jpg": "/portfolio/static/media/counter.1be7fc8a.jpg",
-    "static/media/cvPhoto.d789580c.pdf": "/portfolio/static/media/cvPhoto.d789580c.pdf",
+    "static/media/cvPhoto.197b5f14.pdf": "/portfolio/static/media/cvPhoto.197b5f14.pdf",
     "static/media/packCard.0aec6f4e.jpg": "/portfolio/static/media/packCard.0aec6f4e.jpg",
     "static/media/pngegg.7df7529e.png": "/portfolio/static/media/pngegg.7df7529e.png",
     "static/media/social.a22c1016.jpg": "/portfolio/static/media/social.a22c1016.jpg",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.b6a8d141.js",
     "static/js/2.ef7eec5c.chunk.js",
     "static/css/main.88691ddd.chunk.css",
-    "static/js/main.01983c79.chunk.js"
+    "static/js/main.e750e35e.chunk.js"
   ]
 }
