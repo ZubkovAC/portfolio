@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from "react";
 import css from './CV.module.scss'
 import {Modal} from "../components/Modal/ModalCV";
-//@ts-ignore
-import { Document, Page } from 'react-pdf';
 
 //@ts-ignore
 import cvPdf from '../img/cvPhoto.pdf'
-import cvPhoto from '../img/cv-2.jpg'
+import {NavLink} from "react-router-dom";
 
 
 export const CV = () => {
@@ -15,7 +13,7 @@ export const CV = () => {
 
 
     useEffect(()=>{
-        setTimeout(SetActive,0)
+       setTimeout(SetOffActive,0)
         setTarget(true)
     },[])
 
@@ -23,20 +21,18 @@ export const CV = () => {
     const Switch = () => {
         setActive(true)
     }
-    const SetActive = () => {
+    const SetOffActive = () => {
         setActive(false)
     }
 
     return (
         <div className={css.CV}>
-            <h3 className={css.CV_text} onClick={Switch}>CV</h3>
-                <Modal active={active} setActive={SetActive} target={target} >
-                    {/*<img src={cvPhoto} className={css.img} alt="cv"/>*/}
+            <NavLink to="" style={{color:'white',textDecoration:'none'}} onClick={Switch} >
+                <h3 className={css.CV_text} >CV</h3>
+            </NavLink>
+                <Modal active={active} setActive={SetOffActive} target={target} >
                     <embed src={cvPdf} className={css.img} />
                 </Modal>
         </div>
     )
 }
-
-
-

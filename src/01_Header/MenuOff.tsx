@@ -10,8 +10,8 @@ export const MenuOff=(props:MenuPropsType)=>{
     const [accordion, setAccordion] = useState(false)
     const menu = (e:any) => {
         setAccordion(!accordion)
-        // e.stopPropagation()
     }
+
     return(
         <div className={accordion ? css.menu : css.menu_active  }>
 
